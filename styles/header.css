@@ -1,0 +1,117 @@
+body{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Lato', Roboto;
+    vertical-align: baseline;
+    background: url("../images/background.jpg") no-repeat center top;
+    background-size: cover;
+}
+.header-el{
+	width: 100%;
+    height: 110px;
+    background:#ffffff;
+    top: 0px;
+    position: fixed;
+    padding: 0px 0px;
+    box-shadow: 0 3px 5px 0 rgb(0 0 0 / 10%);
+    box-sizing: border-box;
+    border-bottom: 0px;
+    margin-bottom: 5px;
+}
+.head-mainsec{
+    width: 100%;
+    z-index: 99999;
+    letter-spacing: .5px;
+}
+.nav-container{
+    background: #fce4ec;
+    width: 100%;
+    top: 0;
+    position: relative;
+    z-index: 99999;
+}
+.logo-container{
+    width: 96%;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    transition: all 0.2s ease-in 0s;
+}
+.site-logo{
+    float: left;
+}
+.site-logo a{
+    display:block;
+}
+.site-logo img{
+    width: 80px;
+    height: 100px;
+    margin-top: 4px;
+}
+header a{
+    margin: 0px !important;
+    text-decoration: none;
+    font-family: 'Lato', Roboto;
+    color: #174873;
+    border-bottom: 2px solid transparent;
+}
+nav a:hover{
+    color: #123757 !important;
+    border-bottom:4px solid #123757 !important;
+}
+
+.rhs-nav{
+    float: right;
+    width: 73%;
+    padding: 0 0;
+}
+.menu-site{
+    margin-top:32px;
+}
+.menus{
+    float:right;
+}
+.productmenu {
+    margin-right: 5px;
+    margin-bottom: 26px;
+    margin: 0;
+}
+nav ul.header-nav > li:last-child{padding-right:0;}
+nav ul.productmenu{margin-right:5px;margin-bottom:26px;}
+nav ul.header-nav > li:first-child{padding:0 20px 20px 50px;}
+nav ul.header-nav > li{float:left;padding:0 20px 20px 20px;margin:20px 0 0 0;font-size:1.1em;position:static;}
+nav ul.productmenu > li:last-child{padding:0 10px;}
+nav ul.productmenu.header-nav > li:last-child{margin:10px 0 0}
+nav ul.productmenu > li{font-size:1em;padding:0 10px;}
+nav ul.productmenu > li:first-child{padding:0 10px;}
+nav ul.productmenu.header-nav > li {
+    margin: 10px 0 0;
+    font-size:18px;
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.body-content{
+    margin-top: 105px;
+}
+.gksol-banner{
+    padding: 57.3px 0;
+    margin-top: 86px;
+    color: #fff;
+}
+.gksol-banner h1{
+    font-size: 30px !important;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    color: #ededee;
+}
+.container{
+    text-align: center;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    transition: all 0.2s ease-in 0s;
+}
+
