@@ -3,6 +3,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 	<link rel="icon" href="images/favicon.png" type="image" sizes="20x20">
+	<script type="text/javascript" src="scripts/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="scripts/eventhandler.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles/header.css">
 </head>
 <body>
@@ -36,21 +38,104 @@
 	              </ul>
 	            </div>
 	          </nav> 
+	          <ul class="mobile-view-right signup-mv" style="display:none;">
+	          	<li>
+	          		<div class="menu-open" id="start">
+                    	<div class="click-btn" onclick="toggleMenu(this)">
+                          <div class="bar1"></div>
+                          <div class="bar2"></div>
+                          <div class="bar3"></div>
+                          <div class="mcloseemty">&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="ovrly"></div>
+                    <ul class="mobmenu-slide">
+                    	<li style="border: none;padding: 0px;height: 100%;">
+                    		<ul class="mobilemenu">
+                    			<li><a href=""></a>HOME</li>
+                    			<li><a href=""></a>CLIENTS</li>
+                    			<li><a href=""></a>GALLERY</li>
+                    			<li><a href=""></a>CONTACT</li>
+                    		</ul>
+                    	</li>
+                    </ul>
+                    <div class="ovrly"></div>
+	          	</li>
+	          </ul>
+
 	      </div>
 	      	</div>
 	     </div>
 	 </div>
 	</div>
 </header>
+<script type="text/javascript">
+	jQuery(".mobmenu-slide,.menu-open").on('click touchstart', function(e) {
+	e.stopPropagation();
+}); 
+jQuery('.menu-open, a.contactus').click(function(e) {
+	var $overlay = jQuery('.mobmenu-slide, .ovrly');  //no i18n
+	if ($overlay.hasClass('active')) {
+		$overlay.removeClass('active');
+	}else {	
+		$overlay.addClass('active');
+	}
+});
+</script>
 <div class="body-content">
 	<div class="gksol-banner">
 	<div class="container tac">
-      <h1 class="ftrmnhdr">Helping your business build and grow.</h1>
-      <h1 class="ftrmnhdr">EPABX & VOIP SOLUTION</h1>
-</div>
+      <h1 class="ftrmnhdr">Helping your business build and grow</h1>
+	</div>
+	</div>
+	<div class="gk-features">
+		<div class="cctv">
+			<img src="images/cctv.jpg"></img>
+			<h3>Security & Surveillance system</h3> 
+		</div>
+		<div class="cctv">
+			<img src="images/IPrecording.jpg"></img>
+			<h3>IP Video Recording Systems</h3>
+		</div>
+		<div class="cctv">
+			<img src="images/Door.jpg"></img>
+			<h3>Door / Access Control Systems</h3> 
+		</div>
+		<div class="cctv">
+			<img src="images/voip-phone-systems.jpg">
+			<h3>VOIP / Phone Systems</h3>
+		</div>
+	</div>
+	<div class="gk-reviews">
+		<h2 class="kc_title">What Our Customers Are Saying</h2>
+		<div>
+			<h3 class="testimonial_rotator_slide_title">The responsiveness from them regarding our system is unsurpassed.</h3>
+			<p>
+				"Thank you,
+Your team has been fantastic to work with and I really appreciate all of the above and beyond that you've put into this project. It's great to work with an efficient partner like you to assure success despite some unknowns and surprises."
+			</p>
+			
+		</div>
+		<hr class="reviewhr">
+		<strong>Tony Stark, CEO ,Stark Industries</strong>
+
+	</div>
+	<footer>
+		<div class="footerbtm">
+			<div class="clearfix mT20" align="center">
+	                <div class="copyright tac">
+	                    <div>
+	                    <div class="footer-element"><span class="phone"></span> <a href="tel:+916383080890">+91 63830 80890</a></div>
+	                    <div class="footer-element"><span class="email"></span> <a href="mailto:gksolution@gmail.com">gksolution@gmail.com</a></div> </div>
+	                    <div></div>
+	                </div>
+	         </div>
+
+		</div>		
+		<div class="footer_site"> © 2021 <a href="" target="_blank">GK Solution.</a> All rights reserved. </div>
+	</footer>
 </div>
 </body>
-
 </html>
 
 
