@@ -70,16 +70,9 @@
 	</div>
 </header>
 <script type="text/javascript">
-	jQuery(".mobmenu-slide,.menu-open").on('click touchstart', function(e) {
-	e.stopPropagation();
-}); 
-jQuery('.menu-open, a.contactus').click(function(e) {
-	var $overlay = jQuery('.mobmenu-slide, .ovrly');  //no i18n
-	if ($overlay.hasClass('active')) {
-		$overlay.removeClass('active');
-	}else {	
-		$overlay.addClass('active');
-	}
+var slideIndex = 0;
+jQuery(document).ready(function(){
+	showSlides();
 });
 </script>
 <div class="body-content">
@@ -108,18 +101,35 @@ jQuery('.menu-open, a.contactus').click(function(e) {
 	</div>
 	<div class="gk-reviews">
 		<h2 class="kc_title">What Our Customers Are Saying</h2>
-		<div>
+		<div class="review-content fade">
 			<h3 class="testimonial_rotator_slide_title">The responsiveness from them regarding our system is unsurpassed.</h3>
 			<p>
 				"Thank you,
 Your team has been fantastic to work with and I really appreciate all of the above and beyond that you've put into this project. It's great to work with an efficient partner like you to assure success despite some unknowns and surprises."
 			</p>
-			
+			<hr class="reviewhr">
+		<strong>Aravindh, IT admin ,AK Industries</strong>
 		</div>
-		<hr class="reviewhr">
+		<div class="review-content fade">
+			<h3 class="testimonial_rotator_slide_title">The responsiveness from them regarding our system is unsurpassed.</h3>
+			<p>
+				It has been two months since we got our new phone system and although we are still figuring out the different features, the service and support from World Telecom is exceptional. Whenever I have a question about a feature, I email Glen and he will either email or call me immediately or even show up on-site. The responsiveness from them regarding our system is unsurpassed. World Telecom is a professional and reliable company whose customer service deserves an A+ rating.
+			</p>
+			<hr class="reviewhr">
+		<strong>Karthik, IT admin ,Karthik tech pvt.ltd</strong>
+		</div>
+		<div class="review-content fade">
+			<h3 class="testimonial_rotator_slide_title">The responsiveness from them regarding our system is unsurpassed.</h3>
+			<p>
+				"Thank you,
+Your team has been fantastic to work with and I really appreciate all of the above and beyond that you've put into this project. It's great to work with an efficient partner like you to assure success despite some unknowns and surprises."
+			</p>
+			<hr class="reviewhr">
 		<strong>Tony Stark, CEO ,Stark Industries</strong>
-
+		</div>
 	</div>
+
+
 	<footer>
 		<div class="footerbtm">
 			<div class="clearfix mT20" align="center">

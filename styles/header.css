@@ -301,6 +301,11 @@ a.logo-img {
     border-bottom: 0px;
     margin-bottom: 5px;
 }
+.menu-open {
+    top: 20px !important;
+    margin-right: 10px !important;
+    z-index: 999999;
+}
 }
 .footerbtm{
         background: #212329;
@@ -344,7 +349,7 @@ span.phone, span.email {
     background: #F5F5F5;
 }
 .footer_site a {
-    color: #237CF5;
+    color: #237CF5
 }
 .cctv{
     float: left;
@@ -377,4 +382,25 @@ span.phone, span.email {
 }
 strong{
     color: #666;
+}
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
