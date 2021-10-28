@@ -278,7 +278,7 @@ ul.mobilemenu li a {
 }
 
 .home-testimonial h2 {
-    font-size: 25px !important;
+    font-size: 20px !important;
 }
 .home-testimonial-bottom{
     height: 820px !important;
@@ -384,8 +384,8 @@ span.phone, span.email {
 }
 .cctv{
     float: left;
-    width: 24%;
-    padding: 7px;
+    width: 25%;
+    padding:35px;
 }
 .gk-features   {
     box-shadow: 0 3px 5px 0 rgb(223 63 72 / 28%);

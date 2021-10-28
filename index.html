@@ -12,29 +12,26 @@
 <body>
 	<!-- Messenger Chat plugin Code -->
     <div id="fb-root"></div>
-
     <!-- Your Chat plugin code -->
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "109976498145369");
-      chatbox.setAttribute("attribution", "biz_inbox");
-
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v12.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+    <script type="text/javascript">
+    	var chatbox = document.getElementById('fb-customer-chat');
+		chatbox.setAttribute("page_id", "109976498145369");
+		chatbox.setAttribute("attribution", "biz_inbox");
+		window.fbAsyncInit = function() {
+ 		 	FB.init({
+         	 xfbml:true,
+          	version:'v12.0'
+        	});
+		};
+		(function(d, s, id) {
+	  	   var js, fjs = d.getElementsByTagName(s)[0];
+	       if (d.getElementById(id)) return;
+	       js = d.createElement(s); js.id = id;
+	       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+	       fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
     </script>
 	<title>GK SOLUTION</title>
 <header class="header-el">
@@ -43,7 +40,7 @@
 	    	<div class="nav-container">
 	      		<div class="logo-container">
 	      			<div class="site-logo">
-	      				<a class="logo-img" href="file:///D:/GKSolution/index.html">
+	      				<a class="logo-img" href="https://aravindhkuamresan.github.io/GK-Solution/">
 	      					<img title="Gk solutions" alt="Gk solutions" src="images/logo/gklogo.png">
 	      				</a>
 	      			</div>
@@ -51,19 +48,13 @@
 	          	<nav class="menu-site">
 	            <div class="menus">
 	              <ul class="nav header-nav productmenu clearfix">
-	                <li id="over">
+	                 <li id="over">
 	                	<a href="" title="Overview">Home</a>
 	                </li> 
-	                <li id="fea" >
-	                	<a  href="" title="Features">Clients</a>
+	                <li id="contact">
+	                	<a title="Features">Contact Us</a>
 	                </li> 
-	                <li id="demo">
-	                	<a itemprop="url" href="" title="Demo">Gallery</a>
-	                </li>
-	                <li id="demo">
-	                	<a itemprop="url" href="" title="Demo">Contact</a>
-	                </li>
-	              </ul>
+	              </ul> 
 	            </div>
 	          </nav> 
 	          <ul class="mobile-view-right signup-mv" style="display:none;">
@@ -136,7 +127,8 @@
                     <div class="col-md-4 style-3">
                         <div class="tour-item ">
                             <div class="tour-desc bg-white">
-                                <div class="tour-text color-grey-3 text-center">“Thank you GK solution,It's great to work with an efficient partner like you to assure success despite some unknowns and surprises.”</div>
+                                <div class="tour-text color-grey-3 text-center">“I hope all is well in your world. It's great to work with an efficient partner like you to assure success despite some unknowns and surprises. 
+                                Thank you Team!”</div>
                                 <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="images/cust-pro-ak.jpg" alt=""></div>
                                 <div class="link-name d-flex justify-content-center">Aravindh Kumaresan</div>
                                 <div class="link-position d-flex justify-content-center">Vice President - Stark Industries</div>
@@ -146,7 +138,7 @@
                     <div class="col-md-4 style-3">
                         <div class="tour-item ">
                             <div class="tour-desc bg-white">
-                                <div class="tour-text color-grey-3 text-center">“The responsiveness from them regarding our system is unsurpassed. World Telecom is a professional and reliable company whose customer service deserves an A+ rating.”</div>
+                                <div class="tour-text color-grey-3 text-center">“The responsiveness from them regarding our system is unsurpassed. GK Solution is a professional and reliable company whose customer service deserves an A+ rating.”</div>
                                 <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="images/cust-pro-kr.jpg" alt=""></div>
                                 <div class="link-name d-flex justify-content-center">Karthick Raja</div>
                                 <div class="link-position d-flex justify-content-center">CEO - Stark Industries</div>
@@ -156,7 +148,7 @@
                     <div class="col-md-4 style-3">
                         <div class="tour-item ">
                             <div class="tour-desc bg-white">
-                                <div class="tour-text color-grey-3 text-center">“At this School, our mission is to balance a rigorous comprehensive college preparatory curriculum with healthy social and emotional development.”</div>
+                                <div class="tour-text color-grey-3 text-center">“Your crew did a perfect job! The wiring all looks very good too and I have patched all our users in and every jack works perfect.Thank you GK solution”</div>
                                 <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="images/cust-pro-tony.jpg" alt=""></div>
                                 <div class="link-name d-flex justify-content-center">Tony Stark</div>
                                 <div class="link-position d-flex justify-content-center">Founder - Stark Industries</div>
@@ -180,9 +172,6 @@
 </section>
 </div>
 <script type="text/javascript">
-	jQuery(document).ready(function(){
-			initReviewSlides();
-	});
 	jQuery(".mobmenu-slide,.menu-open").on('click touchstart', function(e) {
 		e.stopPropagation();
 	}); 
