@@ -14,18 +14,21 @@ function initReviewSlides() {
   slides[slideIndex-1].style.display = "block";
   setTimeout(initReviewSlides,3000);
 }
+var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "109976498145369");
+      chatbox.setAttribute("attribution", "biz_inbox");
 
-jQuery(document).ready(function(){
-	initReviewSlides();
-	jQuery(".mobmenu-slide,.menu-open").on('click touchstart', function(e) {
-		e.stopPropagation();
-	}); 
-	jQuery('.menu-open, a.contactus').click(function(e) {
-		var $overlay = jQuery('.mobmenu-slide, .ovrly');  //no i18n
-		if ($overlay.hasClass('active')) {
-			$overlay.removeClass('active');
-		}else {	
-			$overlay.addClass('active');
-		}	
-	});
-});
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));

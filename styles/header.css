@@ -44,15 +44,14 @@ body{
     display:block;
 }
 .site-logo img{
-    width: 80px;
-    height: 90px;
-    margin-top: 2px;
+    width: 86px;
+    height:100px;
 }
 header a{
     margin: 0px !important;
     text-decoration: none;
-    font-family: 'Lato', Roboto;
-    color: #262425;
+    font-family: fantasy;
+    color: #262425db;
     border-bottom: 2px solid transparent;
 }
 header nav a:hover{
@@ -99,16 +98,19 @@ nav ul.productmenu.header-nav > li {
     padding: 50.3px 0;
     margin-top: 86px;
     color: #fff;
-     background: url("../images/background.jpg") no-repeat center top;
+     background: url("../images/background1.jpg") no-repeat center top;
     background-size: cover;
     height: 60px;
+    box-shadow: 0 3px 0px 0 rgb(221 211 201 / 51%);
+    box-sizing: content-box;
 }
 .gksol-banner h1{
     font-size: 45px !important;
-    letter-spacing: 12.5px;
-    line-height: 50px;
+    letter-spacing: 10px;
+    line-height: 15px;
     font-weight: 600;
     color: white;
+    font-family: serif;
 }
 .container{
     text-align: center;
@@ -254,15 +256,15 @@ ul.mobilemenu li a {
     display:block !important;
 }
 .cctv{
-    width: 65% !important;
+    width: 80% !important;
     padding: 55px 0px 0px 70px !important;
 }
 .gksol-banner h1 {
-    font-size: 18px !important;
+    font-size: 20px !important;
     line-height: 50px;
     font-weight: 600;
     color: white;
-    letter-spacing: 2px;
+    letter-spacing:1px;
 }
 .body-content {
     margin-top: -5px;
@@ -270,6 +272,17 @@ ul.mobilemenu li a {
 }
 @media screen and (max-width: 1024px)
 {
+
+.footerbtm{
+    top: 645px;
+}
+
+.home-testimonial h2 {
+    font-size: 25px !important;
+}
+.home-testimonial-bottom{
+    height: 820px !important;
+}
 .footer-element {
     display: block !important;
     margin:0 !important;
@@ -313,7 +326,7 @@ a.logo-img {
 }
 }
 .footerbtm{
-        background: #212329;
+    background: #212329;
     position: relative;
     width: 100%;
     bottom: 0px;
@@ -321,6 +334,10 @@ a.logo-img {
 }
 .footerbtm .clearfix {
     margin-top: 45px !important;
+}
+.copyright.tac{
+    padding: 1.5% 0 1.5% 0;
+    font-size: 14px !important;
 }
 .copyright.tac > div {
     line-height: 30px;
@@ -370,6 +387,14 @@ span.phone, span.email {
     width: 24%;
     padding: 7px;
 }
+.gk-features   {
+    box-shadow: 0 3px 5px 0 rgb(223 63 72 / 28%);
+    box-sizing: border-box;
+}
+.gk-features  h1{
+    text-align: center;
+    letter-spacing: 5px; 
+}
 .gk-features::after {
   content: "";
   clear: both;
@@ -417,4 +442,87 @@ strong{
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+
+.home-testimonial {
+    background-color: #231834;
+    height: 380px
+}
+
+.home-testimonial-bottom {
+    background-color: #f8f8f8;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    position: relative;
+    height: 130px;
+    top: 190px
+}
+
+.home-testimonial h3 {
+    color: var(--orange);
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase
+}
+
+.home-testimonial h2 {
+    color: white;
+    font-size: 28px;
+    font-weight: 700
+}
+
+.testimonial-inner {
+    position: relative;
+    top: -174px
+}
+
+.testimonial-pos {
+    position: relative;
+    top: 24px
+}
+
+.testimonial-inner .tour-desc {
+    border-radius: 5px;
+    padding: 40px
+}
+
+.color-grey-3 {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    color: #6c83a2
+}
+
+.testimonial-inner img.tm-people {
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    max-width: none
+}
+
+.link-name {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 14px;
+    color: #6c83a2
+}
+
+.link-position {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 12px;
+    color: #6c83a2
+}
+.tour-item {
+  transition: transform .2s;
+  margin: 0 auto;
+  width:80%;
+}
+
+.tour-item:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1); 
 }
