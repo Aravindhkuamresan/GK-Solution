@@ -4,6 +4,9 @@ function toggleMenu(element) {
 
 jQuery(document).ready(function(){
 	jQuery('#contact').on('click',function(){
-			window.scrollTo(0,document.body.scrollHeight);
+			jQuery("html, body").animate({ scrollTop:document.body.scrollHeight},"fast");
+	});
+	jQuery('#home').on('click',function(){
+			 jQuery("html, body").animate({ scrollTop: 0},"fast");
 	});
 });
