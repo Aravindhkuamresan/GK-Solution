@@ -213,7 +213,8 @@ ul.mobilemenu li a {
     height: 100%;
     left: 0;
     right: 0;
-}.change .bar1 {
+}
+.change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-8px, 8px) ;
     transform: rotate(-45deg) translate(-8px, 8px) ;
     z-index:999999;
@@ -264,11 +265,15 @@ ul.mobilemenu li a {
     letter-spacing: 2px;
 }
 .body-content {
-    margin-top: 0px;
+    margin-top: -5px;
 }
 }
 @media screen and (max-width: 1024px)
 {
+.footer-element {
+    display: block !important;
+    margin:0 !important;
+}
 .menu-site
 {
     display:none !important;
@@ -322,14 +327,23 @@ a.logo-img {
 }
 .footer-element {
     display: inline;
+    margin:25px;
 }
+span.email {
+    background: url(../images/sent-mail.png) no-repeat;
+}
+
+span.phone{
+    background:url("../images/phone.png") no-repeat;
+}
+
 span.phone, span.email {
-    width: 16px;
-    height: 20px;
+    width: 26px;
+    height: 25px;
     display: inline-block;
     vertical-align: middle;
     margin-right: 5px;
-    background-size: 312px;
+    background-size: 25px;
 }
 .copyright a {
     font-size: 13px !important;
@@ -349,7 +363,7 @@ span.phone, span.email {
     background: #F5F5F5;
 }
 .footer_site a {
-    color: #237CF5
+    color: #237CF5;
 }
 .cctv{
     float: left;
@@ -390,9 +404,9 @@ strong{
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 3.5s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 3.5s;
 }
 
 @-webkit-keyframes fade {
