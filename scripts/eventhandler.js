@@ -3,10 +3,14 @@ function toggleMenu(element) {
 }
 
 jQuery(document).ready(function(){
-	jQuery('#contact').on('click',function(){
+	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+	/*jQuery('#contact').on('click',function(){
 			jQuery("html, body").animate({ scrollTop:document.body.scrollHeight},"fast");
 	});
 	jQuery('#home').on('click',function(){
 			 jQuery("html, body").animate({ scrollTop: 0},"fast");
-	});
+	});*/
 });

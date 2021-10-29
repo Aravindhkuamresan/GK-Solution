@@ -10,29 +10,35 @@
 	<link rel="stylesheet" type="text/css" href="styles/header.css">
 </head>
 <body>
+
+
+	
+<body id="homepage">
 	<!-- Messenger Chat plugin Code -->
-    <div id="fb-root"></div>
+	<div id="fb-root"></div>
     <!-- Your Chat plugin code -->
     <div id="fb-customer-chat" class="fb-customerchat">
     </div>
     <script type="text/javascript">
-    	var chatbox = document.getElementById('fb-customer-chat');
-		chatbox.setAttribute("page_id", "109976498145369");
-		chatbox.setAttribute("attribution", "biz_inbox");
-		window.fbAsyncInit = function() {
- 		 	FB.init({
-         	 xfbml:true,
-          	version:'v12.0'
-        	});
-		};
-		(function(d, s, id) {
-	  	   var js, fjs = d.getElementsByTagName(s)[0];
-	       if (d.getElementById(id)) return;
-	       js = d.createElement(s); js.id = id;
-	       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-	       fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-    </script>
+					var chatbox = document.getElementById('fb-customer-chat');
+					chatbox.setAttribute("page_id", "109976498145369");
+					chatbox.setAttribute("attribution", "biz_inbox");
+					window.fbAsyncInit = function() {
+						FB.init({
+							xfbml : true,
+							version : 'v12.0'
+						});
+					};
+					(function(d, s, id) {
+						var js, fjs = d.getElementsByTagName(s)[0];
+						if (d.getElementById(id))
+							return;
+						js = d.createElement(s);
+						js.id = id;
+						js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+						fjs.parentNode.insertBefore(js, fjs);
+					}(document, 'script', 'facebook-jssdk'));
+				</script>
 	<title>GK SOLUTION</title>
 <header class="header-el">
 	<div id="parent-container">
@@ -40,23 +46,49 @@
 	    	<div class="nav-container">
 	      		<div class="logo-container">
 	      			<div class="site-logo">
-	      				<a class="logo-img" href="https://aravindhkuamresan.github.io/GK-Solution/">
-	      					<img title="Gk solutions" alt="Gk solutions" src="images/logo/gklogo.png">
+	      				<a class="logo-img"
+								href="https://aravindhkuamresan.github.io/GK-Solution/">
+	      					<img title="Gk solutions" alt="Gk solutions"
+								src="images/logo/gklogo.png">
 	      				</a>
 	      			</div>
 	      			<div class="rhs-nav">
-	          	<nav class="menu-site">
-	            <div class="menus">
-	              <ul class="nav header-nav productmenu clearfix">
-	                 <li id="home">
-	                	<a title="Overview">Home</a>
-	                </li> 
-	                <li id="contact">
-	                	<a title="Features">Contact Us</a>
-	                </li> 
-	              </ul> 
-	            </div>
-	          </nav> 
+
+
+
+	<nav class="menu-site">
+		<div class="menus">
+			<ul class="nav header-nav productmenu clearfix">
+				<li class="nav-item" id="home"><a data-bs-toggle="tooltip"
+											data-bs-placement="bottom" href="#homepage" title="Home">Home</a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+											href="#" role="button" aria-expanded="false">Services</a>
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#cctv">CCTV</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="#ipvr">IP Video Recording Systems</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="#biometric">Door / Access Control System</a></li>
+						<li><hr class="dropdown-divider"></li>
+						<li><a class="dropdown-item" href="#voip">VOIP / Phone Systems</a></li>
+					</ul>
+										</li> 
+				<li class="nav-item" id="price"><a data-bs-toggle="tooltip"
+											data-bs-placement="bottom" title="Pricing">Pricing</a></li>
+				<li class="nav-item" id="contact"><a data-bs-toggle="tooltip"
+											data-bs-placement="bottom" href="#footer" title="Contact Us">Contact Us</a></li>
+			</ul>
+		</div>
+	</nav>
+
+
+
+	
+
+
+
+
 	          <ul class="mobile-view-right signup-mv" style="display:none;">
 	          	<li>
 	          		<div class="menu-open" id="start">
@@ -94,26 +126,142 @@
       <h1 class="ftrmnhdr">Helping your business build and grow</h1>      
 	</div>
 	</div>
-	<div class="gk-features">
-		<h1 class="ftrmnhdr">Our Best Services</h1>
-		<div class="cctv">
-			<img src="images/cctv-img.jpg"></img>
-			<h3>Security & Surveillance system</h3> 
+
+
+	<div class="row scrollspy-example gk-features" data-bs-spy="scroll"
+			data-bs-target="#navbar-example2" data-bs-offset="0" tabindex="0"> 
+
+	<div id="cctv" class="container-cctv">
+      <div class="feature col cctv">
+        <div class="wpb_wrapper">
+		<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h2>Security &amp; Surveillance system</h2>
+			<p>We ensure integrity of the technologies that keep our world moving, , staying one step ahead of all forms of threats and enhancing life for all. Governments, institutions and large global companies rely on GECI to design and deliver solutions that protect states, cities and critical infrastructure in an increasingly unpredictable world, with emerging threats.</p>
+			<ul>
+			<li>4K Security Camera System</li>
+			<li>IP Camera System</li>
+			<li>HD DVR Camera Systems</li>
+			<li>Wireless Camera System</li>
+			<li>2 Camera Security System</li>
+			<li>4 Camera Security System</li>
+			<li>8 Camera Security System</li>
+			<li>16 Camera Security System</li>
+			<li>32 Camera Security System</li>
+			</ul>
 		</div>
-		<div class="cctv">
-			<img src="images/IPrecording.jpg"></img>
-			<h3>IP Video Recording Systems</h3>
 		</div>
-		<div class="cctv">
-			<img src="images/biometrics.jpg"></img>
-			<h3>Door / Access Control Systems</h3> 
 		</div>
-		<div class="cctv">
-			<img src="images/voip-phone-systems.jpg">
-			<h3>VOIP / Phone Systems</h3>
+      </div>
+       <div class="feature col cctv-img">
+        <div class="feature-icon  bg-gradient">
+        	<img src="images/cctv-img.jpg">
+        </div>
+      </div>
+  </div>
+
+
+	<div id="ipvr" class="container-ip">
+		<div class="feature col cctv-img">
+			<div class="feature-icon bg-gradient">
+				<img src="images/IPrecording.jpg">
+			</div>
+		</div>
+		<div class="feature col cctv">
+			<div class="wpb_wrapper">
+				<div class="wpb_text_column wpb_content_element ">
+					<div class="wpb_wrapper">
+						<h2>IP Video Recording Systems</h2>
+						<p>We rigorously test and review each IP camera model we sell
+							to ensure it performs to specifications, and is easy to integrate
+							with our network video recorders. Most network cameras we sell
+							have PoE connectivity built-in, making them easy to use with any
+							NVR with built-in PoE switch.</p>
+						<ul>
+							<li>1080P IP Cameras</li>
+							<li>3MP IP Cameras</li>
+							<li>4MP IP Cameras</li>
+							<li>5MP IP Cameras</li>
+							<li>4K Security Camera</li>
+							<li>Mini Network PTZ IP Cameras</li>
+							<li>PTZ IP Camera</li>
+							<li>IP Cameras with Audio</li>
+							<li>Security Cameras with SD Card</li>
+							<li>Wireless IP Cameras</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-		<section class="home-testimonial">
+
+
+	<div id="biometric" class="container-biometrics">
+      <div class="feature col cctv">
+        <div class="wpb_wrapper">
+		<div class="wpb_text_column wpb_content_element ">
+		<div class="wpb_wrapper">
+			<h2>Door / Access Control Systems</h2>
+			<p>Door access control systems are digital security systems that ensure authorized access to your building. They ensure only authorized personnel are entering your building while keeping unauthorized personnel out. This can be extremely efficient in avoiding trespassing, vandalism, and other criminal activity at your business. Plus, because they are digital, they are more efficient in doing so than traditional lock-and-key systems.
+
+At the same time, door access control systems simplify entry to your building. Employees and other personnel no longer have to carry keys or unlock doors the old-fashioned way. You can issue users convenient forms of entry like card keys, key fobs, mobile app barcodes, and more.</p>
+			<ul>
+			<li>Time Attendence System</li>
+			<li>Attendence and Access Control System</li>
+			<li>Optical Sensor Access Control System</li>
+			<li>Scratch Proof Sensor Fingerprint Access Control</li>
+			<li>Biometric Door Access Control System</li>
+			</ul>
+		</div>
+		</div>
+		</div>
+      </div>
+       <div class="feature col cctv-img">
+        <div class="feature-icon  bg-gradient">
+        	<img src="images/biometrics.jpg">
+        </div>
+      </div>
+  </div>
+
+  <div id="voip" class="container-ip">
+		<div class="feature col cctv-img">
+			<div class="feature-icon bg-gradient">
+				<img src="images/voip-phone-systems.jpg">
+			</div>
+		</div>
+		<div class="feature col cctv">
+			<div class="wpb_wrapper">
+				<div class="wpb_text_column wpb_content_element ">
+					<div class="wpb_wrapper">
+						<h2>VOIP / Phone Systems</h2>
+						<p>VoIP converts your phone calls into data and is sent over the internet. You can use the Ethernet cables or skip them if you have a strong Wi-Fi signal. It does so at a much lower cost than older telephone systems. Voice over IP has many advantages over traditional phone service</p>
+						<ul>
+							<li>1080P IP Cameras</li>
+							<li>3MP IP Cameras</li>
+							<li>4MP IP Cameras</li>
+							<li>5MP IP Cameras</li>
+							<li>4K Security Camera</li>
+							<li>Mini Network PTZ IP Cameras</li>
+							<li>PTZ IP Camera</li>
+							<li>IP Cameras with Audio</li>
+							<li>Security Cameras with SD Card</li>
+							<li>Wireless IP Cameras</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+    </div>
+
+<section class="home-testimonial">
     <div class="container-fluid">
         <div class="row d-flex justify-content-center testimonial-pos">
             <div class="col-md-12 d-flex justify-content-center">
@@ -126,64 +274,98 @@
                     <div class="col-md-4 style-3">
                         <div class="tour-item ">
                             <div class="tour-desc bg-white">
-                                <div class="tour-text color-grey-3 text-center">“I hope all is well in your world. It's great to work with an efficient partner like you to assure success despite some unknowns and surprises. 
+                                <div
+											class="tour-text color-grey-3 text-center">“I hope all is well in your world. It's great to work with an efficient partner like you to assure success despite some unknowns and surprises. 
                                 Thank you Team!”</div>
-                                <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="images/cust-pro-ak.jpg" alt=""></div>
-                                <div class="link-name d-flex justify-content-center">Aravindh Kumaresan</div>
-                                <div class="link-position d-flex justify-content-center">Vice President - Stark Industries</div>
+                                <div
+											class="d-flex justify-content-center pt-2 pb-2">
+											<img class="tm-people" src="images/cust-pro-ak.jpg" alt="">
+										</div>
+                                <div
+											class="link-name d-flex justify-content-center">Aravindh Kumaresan</div>
+                                <div
+											class="link-position d-flex justify-content-center">Vice President - Stark Industries</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 style-3">
                         <div class="tour-item ">
                             <div class="tour-desc bg-white">
-                                <div class="tour-text color-grey-3 text-center">“The responsiveness from them regarding our system is unsurpassed. GK Solution is a professional and reliable company whose customer service deserves an A+ rating.”</div>
-                                <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="images/cust-pro-kr.jpg" alt=""></div>
-                                <div class="link-name d-flex justify-content-center">Karthick Raja</div>
-                                <div class="link-position d-flex justify-content-center">CEO - Stark Industries</div>
+                                <div
+											class="tour-text color-grey-3 text-center">“The responsiveness from them regarding our system is unsurpassed. GK Solution is a professional and reliable company whose customer service deserves an A+ rating.”</div>
+                                <div
+											class="d-flex justify-content-center pt-2 pb-2">
+											<img class="tm-people" src="images/cust-pro-kr.jpg" alt="">
+										</div>
+                                <div
+											class="link-name d-flex justify-content-center">Karthick Raja</div>
+                                <div
+											class="link-position d-flex justify-content-center">CEO - Stark Industries</div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4 style-3">
                         <div class="tour-item ">
                             <div class="tour-desc bg-white">
-                                <div class="tour-text color-grey-3 text-center">“Your crew did a perfect job! The wiring all looks very good too and I have patched all our users in and every jack works perfect.Thank you GK solution”</div>
-                                <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="images/cust-pro-tony.jpg" alt=""></div>
-                                <div class="link-name d-flex justify-content-center">Tony Stark</div>
-                                <div class="link-position d-flex justify-content-center">Founder - Stark Industries</div>
+                                <div
+											class="tour-text color-grey-3 text-center">“Your crew did a perfect job! The wiring all looks very good too and I have patched all our users in and every jack works perfect.Thank you GK solution”</div>
+                                <div
+											class="d-flex justify-content-center pt-2 pb-2">
+											<img class="tm-people" src="images/cust-pro-tony.jpg" alt="">
+										</div>
+                                <div
+											class="link-name d-flex justify-content-center">Tony Stark</div>
+                                <div
+											class="link-position d-flex justify-content-center">Founder - Stark Industries</div>
                             </div>
                         </div>
                     </div>
                 </div>
-        </section>
-</section>
+        
+				</section>
 
-<section class="footerbtm">
+		</section>
+
+	
+	
+
+
+
+
+
+<section id="footer" class="footerbtm">
 	            <div class="clearfix mT20" align="center">
 	                <div class="copyright tac">
 	                    <div>
-	                    <div class="footer-element"><span class="phone"></span> <a href="tel:+916383080890">+91 63830 80890</a></div>
-	                    <div class="footer-element"><span class="email"></span> <a href="mailto:gksolution@gmail.com">gksolution@gmail.com<a></div> </div>
+	                    <div class="footer-element">
+							<span class="phone"></span> <a href="tel:+916383080890">+91 63830 80890</a>
+						</div>
+	                    <div class="footer-element">
+							<i class="bi bi-envelope"></i><span class="email"></span> <a
+								href="mailto:gksolution@gmail.com">gksolution@gmail.com<a>
+						</div> </div>
 	                    <div></div>
 	                </div>
 	         </div>
-	          <div class="footer_site"> © 2021 <a href="https://aravindhkuamresan.github.io/GK-Solution/" target="_blank">GK Solution.</a>All rights reserved.</div>
+	          <div class="footer_site"> © 2021 <a
+					href="https://aravindhkuamresan.github.io/GK-Solution/"
+					target="_blank">GK Solution.</a>All rights reserved.</div>
 </section>
 </div>
 <script type="text/javascript">
 	jQuery(".mobmenu-slide,.menu-open").on('click touchstart', function(e) {
 		e.stopPropagation();
-	}); 
+	});
 	jQuery('.menu-open, a.contactus').click(function(e) {
-		var $overlay = jQuery('.mobmenu-slide, .ovrly');  //no i18n
+		var $overlay = jQuery('.mobmenu-slide, .ovrly'); //no i18n
 		if ($overlay.hasClass('active')) {
 			$overlay.removeClass('active');
-		}else {	
+		} else {
 			$overlay.addClass('active');
-		}	
+		}
 	});
 </script>
-</body>
+</body>	
 </html>
 
 
