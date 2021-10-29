@@ -238,13 +238,19 @@ ul.mobilemenu li a {
     visibility: visible;
     height: 100%;
     position: fixed;
-    background: rgba(175, 175, 175, 0.31);
+    background: rgb(16 15 15 / 97%);
     top: 0px;
     z-index: 9999;
     width: 100%;
     left: 0;
     right: 0;
     transition: all .1s;
+    color: #ff1100;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+    padding-top: 347px;
+}
 }
 @media screen and (max-width: 800px)
 {
@@ -577,4 +583,7 @@ a.nav-link.dropdown-toggle {
 }
 .row.scrollspy-example.gk-features {
     margin-right: 0 !important;
+}
+.ovrly p {
+    font-size: 40px;
 }
