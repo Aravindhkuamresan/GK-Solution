@@ -11,13 +11,10 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 var userAgent  = navigator.userAgent;
 	 	var isMobile = false;
 		if(userAgent.indexOf("Android")!=-1 ||  userAgent.indexOf("iPhone")!=-1 ||  userAgent.indexOf("iPad")!=-1 ){
-			var $overlay = jQuery('.ovrly'); //no i18n
-		if ($overlay.hasClass('active')) {
-			$overlay.removeClass('active');
-		} else {
-			$overlay.addClass('active');
-		}		
+			jQuery('.services').hide();
+			jQuery('.services-mob').show();
 		}else{
-			jQuery('.ovrly').hide();
+			jQuery('.services').show();
+			jQuery('.services-mob').hide();
 		}
 });

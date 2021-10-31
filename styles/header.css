@@ -276,6 +276,79 @@ ul.mobilemenu li a {
 @media screen and (max-width: 1024px)
 {
 
+ .our-prod img {
+    width: 80% !important;
+}
+
+.our-prod div {
+    padding: 24px 0px 23px 31px !important;
+}
+   
+
+ div#cctv {
+    background: #e9e8e73d;
+}
+
+div#biometric {
+ background: #e9e8e73d;
+}   
+
+.productmenu li {
+    margin: 10px 0 0 !important;
+    font-size: 15px !important;
+}
+
+header a {
+    color: #050605;
+}
+
+a.nav-link.dropdown-toggle {
+    color: #050605 !important;
+}
+
+.gksol-banner {
+    margin-top: 80px;
+}
+
+.cctv-mob {
+    width: 100%;
+    padding: 85px 18px 0px 18px;
+}
+
+.gk-features-mobile img {
+    width: 100%;
+}
+
+.cctv-mob h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+h1.ftrmnhdr {
+    font-size: 17px !important;
+    letter-spacing: 2px;
+}
+
+ul.nav.header-nav.productmenu.clearfix {
+    margin-top: 15px !important;
+}
+a.dropdown-item {
+    font-size: 14px;
+}
+
+.wpb_wrapper h2 {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.wpb_wrapper p {
+    font-size: 15px;
+}
+
+.wpb_wrapper ul {
+    font-size: 15px;
+}
+
 .footerbtm{
     top: 645px;
 }
@@ -290,10 +363,10 @@ ul.mobilemenu li a {
     display: block !important;
     margin:0 !important;
 }
-.menu-site
+/*.menu-site
 {
     display:none !important;
-}
+}*/
 a.logo-img {
     margin-top: 10px !important;
 }
@@ -301,7 +374,7 @@ a.logo-img {
 {
     width: 50px!important;
     height: auto;
-    margin: 0px 0px 0px 7px;
+    margin: -6px 0px 0px 7px;
 }
   .site-logo {
     margin-top: 2px;
@@ -586,4 +659,25 @@ a.nav-link.dropdown-toggle {
 }
 .ovrly p {
     font-size: 40px;
+}
+.our-prod img {
+    width: 50%;
+}
+
+.our-prod div {
+    float: left;
+    width: 50%;
+    padding: 30px 0px 30px 100px;
+}
+
+.our-prod {
+    width: 100%;
+    display: inline-block;
+    box-shadow: 0px 0px 0px 3px #edededd1;
+    box-sizing: border-box;
+}
+.or-prd {
+    text-align: center;
+    background: #020006cf;
+    color: #fff;
 }
