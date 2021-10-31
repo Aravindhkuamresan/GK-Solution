@@ -16,6 +16,7 @@ body{
     border-bottom: 0px;
     margin-bottom: 5px;
     opacity:0.9;
+    z-index: 1000;
 }
 .head-mainsec{
     width: 100%;
@@ -275,6 +276,9 @@ ul.mobilemenu li a {
 }
 @media screen and (max-width: 1024px)
 {
+.col-md-4.style-3 {
+    padding-top: 26px;
+}
 
  .our-prod img {
     width: 80% !important;
@@ -339,6 +343,8 @@ a.dropdown-item {
 .wpb_wrapper h2 {
     font-size: 20px;
     font-family: sans-serif;
+    line-height: 36px;
+    font-weight: bold;
 }
 
 .wpb_wrapper p {
@@ -394,6 +400,7 @@ a.logo-img {
     box-sizing: border-box;
     border-bottom: 0px;
     margin-bottom: 5px;
+    z-index: 1000;
 }
 .menu-open {
     top: 20px !important;
@@ -550,7 +557,7 @@ strong{
 
 .testimonial-inner {
     position: relative;
-    top: -174px
+    top: -174px;
 }
 
 .testimonial-pos {
