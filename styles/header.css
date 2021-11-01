@@ -277,6 +277,10 @@ ul.mobilemenu li a {
 @media screen and (max-width: 1024px)
 {
 
+   .home-testimonial {
+    height: 390px !important;
+    } 
+
 .testimonial-inner {
     position: relative;
     top: -200px !important;
@@ -322,7 +326,7 @@ a.nav-link.dropdown-toggle {
 
 .cctv-mob {
     width: 100%;
-    padding: 85px 18px 0px 18px;
+    padding: 30px 18px 0px 18px;
 }
 
 .gk-features-mobile img {
