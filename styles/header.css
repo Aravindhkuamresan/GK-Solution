@@ -276,6 +276,9 @@ ul.mobilemenu li a {
 }
 @media screen and (max-width: 1024px)
 {
+    .home-testimonial-bottom{
+        height: 850px!important;
+    }
 
    .home-testimonial {
     height: 390px !important;
@@ -548,8 +551,8 @@ strong{
     margin-top: 20px;
     margin-bottom: 0px;
     position: relative;
-    height: 130px;
-    top: 190px
+    height: 850px !important;
+    top: 190px;
 }
 
 .home-testimonial h3 {
