@@ -4,7 +4,6 @@ footer.gk-footer {
 
 .contact-container {
     color: #fff;
-    border-bottom: 1px solid #373636;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
@@ -12,21 +11,24 @@ footer.gk-footer {
 }
 
 .footer-element a {
-    color: #6c757d;
+    color: #a2a2a2;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 img.img-fluid {
-    width: 18%;
+    width: 10%;
+    padding-bottom: 12px;
 }
 
 .footer-text p {
     color: #fff;
+    font-size: 14px;
 }
 
 .aboutus {
-    padding: 10px 0px 0px 0px;
+    padding: 20px 4px 3px 3px;
+    border-bottom: 1px solid #373636;
 }
 
 .footer-social-icon span {
@@ -86,6 +88,13 @@ img.img-fluid {
 }
 @media screen and (max-width: 1024px)
 {
+
+    img.img-fluid {
+    width: 22% !important;
+    height: 30% !important;
+}
+
+
     footer.gk-footer {
         position: relative;
         top: 690px;
@@ -102,4 +111,10 @@ h2.my-4.heading.text-center {
 }
 .aboutus .col-xl-4 {
     width: 50%;
+}
+footer h4 {
+    font-size: 16px !important;
+}
+.contact-container .fa {
+    font-size: 25px;
 }

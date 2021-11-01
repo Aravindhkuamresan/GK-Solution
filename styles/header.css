@@ -2,7 +2,6 @@ body{
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: 'Lato', Roboto;
     vertical-align: baseline;
 }
 .header-el{
@@ -88,6 +87,7 @@ nav ul.productmenu.header-nav > li {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-family: 'FontAwesome';
 }
 .body-content{
     margin-top: 61px;
@@ -276,6 +276,12 @@ ul.mobilemenu li a {
 }
 @media screen and (max-width: 1024px)
 {
+
+.testimonial-inner {
+    position: relative;
+    top: -200px !important;
+}
+
 .col-md-4.style-3 {
     padding-top: 26px;
 }
@@ -360,7 +366,7 @@ a.dropdown-item {
 }
 
 .home-testimonial h2 {
-    font-size: 20px !important;
+    font-size: 18px !important;
 }
 .home-testimonial-bottom{
     height: 820px !important;
@@ -573,7 +579,7 @@ strong{
 .color-grey-3 {
     font-family: "Montserrat", Sans-serif;
     font-size: 14px;
-    color: #6c83a2
+    color: #125688;
 }
 
 .testimonial-inner img.tm-people {
@@ -589,13 +595,13 @@ strong{
 .link-name {
     font-family: "Montserrat", Sans-serif;
     font-size: 14px;
-    color: #6c83a2
+    color: #3b5998;
 }
 
 .link-position {
     font-family: "Montserrat", Sans-serif;
-    font-size: 12px;
-    color: #6c83a2
+    font-size: 13px;
+    color: #125688;
 }
 .tour-item {
   transition: transform .2s;
