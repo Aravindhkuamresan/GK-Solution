@@ -53,7 +53,10 @@ function sendEmail(params){
 	}
 	if(email_params.from_name != '' && email_params.to_name != '' && email_params.message != ''){
 			emailjs.send('service_2i0sskz','template_mm8012i',email_params).then(function(res){
-				jQuery('.alert-success').fadeOut().delay(3000).fadeIn();
+				jQuery('.alert-success').fadeIn().delay(3000).fadeOut();
+				document.getElementById("fq_name").value = '';
+				document.getElementById("fq_email").value = '';
+				document.getElementById("msg").value = '';
 			});
 	}else{
 		jQuery('.alert-danger').fadeIn().delay(2500).fadeOut();

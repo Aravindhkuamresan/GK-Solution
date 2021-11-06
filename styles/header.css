@@ -712,10 +712,10 @@ h2.service-head {
 }
 
 .free-quote {
-    background: #eb9007;
     padding: 30px 50px;
     color: rgba(255, 255, 255, 0.6);
-    font-size: 15px
+    font-size: 15px;
+    box-shadow: 0px 0px 0px 1.5px #e8e9e94a;
 }
 
 .heading {
@@ -746,7 +746,7 @@ h2.service-head {
 }
 
 .btn.btn-primary {
-    border: 2px solid transparent
+    border: 2px solid transparent;
 }
 
 .btn {
@@ -755,11 +755,6 @@ h2.service-head {
     /* border-radius: 0; */
 }
 
-.btn.btn-primary:hover {
-    border: 2px solid #3b5998;
-    background: none !important;
-    color: #fff !important;
-}
 li#quote {
     background: #7BBB2A;
     position: relative;
@@ -789,3 +784,13 @@ p.text-center.alert.alert-danger.alert-dismissable {
     background-color: #f8d7da;
     border-color: #f5c2c7;
 }
+
+h2.my-4.heading.text-center {
+    color: #202020;
+}
+
+.form-group {
+    text-align: left;
+}
+
+.btn.btn-primary:hover {background-color: #7dbd4c;}
