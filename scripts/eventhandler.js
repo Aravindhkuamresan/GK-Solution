@@ -43,3 +43,20 @@ function initMap() {
     map: map,
   });
 }
+
+function sendEmail(params){
+
+	var email_params = {
+		from_name:document.getElementById("fq_name").value,
+		to_name:document.getElementById("fq_email").value,
+		message:document.getElementById("msg").value
+	}
+	if(email_params.from_name != '' && email_params.to_name != '' && email_params.message != ''){
+			emailjs.send('service_2i0sskz','template_mm8012i',email_params).then(function(res){
+				jQuery('.alert-success').fadeOut().delay(3000).fadeIn();
+			});
+	}else{
+		jQuery('.alert-danger').fadeIn().delay(2500).fadeOut();
+	}
+
+}

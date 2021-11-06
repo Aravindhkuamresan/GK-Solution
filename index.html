@@ -10,6 +10,12 @@
 	<script type="text/javascript" src="scripts/eventhandler.js"></script>
 	<link rel="stylesheet" type="text/css" href="styles/header.css">
 	<link rel="stylesheet" type="text/css" href="styles/footer.css">
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+	<script type="text/javascript">
+	(function() {
+		emailjs.init("user_MhWiW36sVnSqxcYkJigX0");
+	})();
+</script>
 </head>
 <body id="homepage">
 	<!-- Messenger Chat plugin Code -->
@@ -71,7 +77,11 @@
 					</ul>
 			</li> 
 			<li class="nav-item" id="contact"><a data-bs-toggle="tooltip" data-bs-placement="bottom" href="#about" title="Contact Us">Contact Us</a></li>
+			<li class="nav-item" id="quote">
+				<a data-bs-toggle="tooltip" data-bs-placement="bottom" href="#fquote" title="Get Quote">Get Quote</a>
+			</li>
 			</ul>
+
 		</div>
 	</nav>
 	      </div>
@@ -414,31 +424,34 @@ I am proud to say that we at GK solution have been consistently investing in sec
                                 <a target="_blank" href="https://www.facebook.com/gksolutionmadurai/" class="fa fa-instagram"></a>
                             </div> -->
 					</div>
-				</div>
-				<div class="col-xl-4">
-					 <div class="footer-social-icon">
+					<div class="footer-social-icon">
                                 <span>Follow us</span>
                                 <a target="_blank" href="https://www.facebook.com/gksolutionmadurai/" class="fa fa-facebook"></a>
                                 <a target="_blank" href="https://www.facebook.com/gksolutionmadurai/" class="fa fa-instagram"></a>
                             </div>
-
-
 				</div>
-				<!-- <div class="col-xl-4">
-					<div class="container d-flex justify-content-center align-items-center height">
-    <div class="card py-3">
-        <div class="p-3 d-flex align-items-center justify-content-center">
-            <h5>Get a quote</h5>
+				<div class="col-xl-4">
+					 
+        <div class="padding container-fluid d-flex justify-content-center">
+        <div id="fquote" class="free-quote bg-dark h-100">
+        	<p class="text-center alert alert-success alert-dismissable" style="display:none;"  data-dismiss="alert" role="alert">
+  					Thank you! We'll get back to you in minutes.
+				</p>
+				<p class="text-center alert alert-danger alert-dismissable" style="display:none;"  data-dismiss="alert" role="alert">
+  					Please enter your details!
+				</p>
+            <h2 class="my-4 heading text-center">Get Free Quote</h2>
+                <div class="form-group"> <label for="fq_name">Name</label> <input type="text" class="form-control btn-block" id="fq_name" name="fq_name" placeholder="Enter Name" required> </div>
+                <div class="form-group mb-4"> <label for="fq_email">Email</label> <input type="text" class="form-control btn-block" id="fq_email" name="fq_email" placeholder="Enter your Email" required> </div>
+                <textarea id="msg" class="form-control mb-3 description-area" placeholder="Write your message..." required></textarea>
+                <div class="form-group"> <button class="btn btn-primary text-white py-2 px-4 btn-block" onclick="sendEmail()">
+                	Get Quote
+                </button></div>
         </div>
-        <div class="p-3 px-4 py-2"> <span class="font-weight-normal quote">Your Name</span> <input type="text" class="form-control mb-2" placeholder="your name" /> <span class="font-weight-normal quote">Mail</span> <input type="text" class="form-control mb-2" placeholder="your email address" /> <span class="font-weight-normal quote">Message</span>
-            <div class="form"> <textarea class="form-control mb-3 description-area" placeholder="whats your message..."></textarea> <a href="#" class=""></a> </div>
-            <div class="text-right"> <button class="btn btn-danger send">Send Message</button> </div>
-        </div>
-    </div>
+   
 </div>
 
-				</div> -->
-			
+				</div>
 	</div>
 
 	</div>
@@ -447,15 +460,6 @@ I am proud to say that we at GK solution have been consistently investing in sec
 		<div class="contact-container">
 		<div class="row">
 			<div class="col-xl-4">
-					<!-- <div class="location">
-						<i class="fa fa-map-marker"></i>
-						<div class="footer-element">
-							<h4>Locate Us</h4>
-							 <span class="fa fa-map-marker"></span>
-							<a href="tel:+916383080890">Madurai</a>
-						</div>
-					</div> -->
-
 					<div class="location">
                             <i class="fa fa-map-marker"></i>
                             <div class="footer-element">
